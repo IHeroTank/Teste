@@ -4,40 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- Links -->
+    <!-- Título da Página -->
+    <title>Pokedex</title>
+    
+    <!-- Links de Favicon e CSS -->
     <link rel="icon" href="fivicon/favicon-16x16.png">
     <link rel="stylesheet" href="css/pokedex.css">
     
     <!-- Main JS -->
     <script defer src="js/pokedex_script.js"></script>
-    <title>Pokedex</title>
 </head>
 
 <body>
     <!-- Container escalável -->
     <div class="escala-container">
         <main>
+            <!-- Imagens -->
             <img src="img/bola_azul.png" alt="Bola Azul" class="bola_azul">
             <img src="#" alt="pokemon" class="pokemon_image">
             <img src="img/pokedex_sem_fundo.png" alt="pokedex" class="pokedex">
 
+            <!-- Dados do Pokémon -->
             <h1 class="pokemon_data">
                 <span class="pokemon_number"></span> 
                 <span class="pokemon_name"></span> 
                 <span class="pokemon_desc"></span>        
             </h1>
 
+            <!-- Tipo do Pokémon -->
             <h2 class="pokemon_tipo_posicao">
                 <span class="pokemon_tipo"></span>
             </h2>
 
+            <!-- Formulário de busca -->
             <form class="form">
-                <input type="search"
-                    class="input_search"
-                    placeholder="Nome ou Número"
-                    required />
+                <input type="search" class="input_search" placeholder="Nome ou Número" required />
             </form>
 
+            <!-- Botões de navegação -->
             <div class="buttons">
                 <button class="button btn-prev">&lt; Anterior</button>
                 <button class="button btn-next">Próximo &gt;</button>
@@ -54,4 +58,4 @@
         <source src="music/background.mp3.mp3.ogg" type="audio/ogg">
     </audio>
 </body>
-</html
+</html>
