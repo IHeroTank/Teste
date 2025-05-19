@@ -11,6 +11,7 @@
 
 /* Estilos para o elemento body (corpo do documento) */
 body {
+    background-color: red !important;
     text-align: center;             /* Centraliza todo o conteúdo inline */
     background: linear-gradient(to bottom, #6ab7f5, #fff); /* Gradiente vertical azul para branco */
     min-height: 100vh;             /* Garante que o body ocupe pelo menos toda a altura da viewport */
