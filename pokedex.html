@@ -59,3 +59,111 @@
     </audio>
 </body>
 </html>
+
+
+//Considere uma variável chamada idade com um valor definido por você. Escreva um
+//programa que imprima:
+//"Entrada gratuita" se a idade for menor que 6 ou maior que 65,
+//"Meia-entrada" se a idade estiver entre 6 e 17,
+//"Entrada inteira" caso contrário
+
+/*
+import * as readline from 'readline';
+
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+
+rl.question("Digite sua idade: ", (input: string) => {
+    const idade: number = parseInt(input);
+
+    if (isNaN(idade)) {
+        console.log("Por favor, digite um número válido.");
+    } else if (idade < 6 || idade > 65) {
+        console.log("Entrada gratuita");
+    } else if (idade >= 6 && idade <= 17) {
+        console.log("Meia-entrada");
+    } else {
+        console.log("Entrada inteira");
+    }
+
+    rl.close();
+});
+
+*/
+
+//2. Crie uma função chamada cumprimentarAluno(nome) que utilize uma variável nome
+//já definida e retorne a frase:
+//"Olá, [nome]! Bem-vindo à aula."
+
+/*
+import * as readline from 'readline';
+
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+
+rl.question("Informe seu nome: ", (input: string) => {
+    const cumprimentarAluno = (input);
+
+    console.log(`Olá. ${cumprimentarAluno}! Bem-vindo à aula.`);
+
+});
+
+*/
+
+//3. Declare um array com os nomes de 5 alunos e imprima o terceiro nome da lista.
+
+//const alunos: string[] = ["João","Bruno","Carlos","Davi","Maria"];
+
+//console.log(" O terceiro nome da lista é:", alunos[2]);
+
+//4. Use um laço for para imprimir a mensagem "Atividade X entregue" para X de 1 até 5.
+
+/*
+for (let i = 1; i <= 5;  i++){
+    console.log(`Atividade ${i} entregue`);
+}
+
+*/
+
+//5. Crie um array com 5 notas. Percorra o array com um laço e imprima se cada nota é
+//“Aprovado” (≥ 60) ou “Reprovado”.
+
+/*
+const notas: number[] = [75, 48, 90, 59, 62];
+
+for (let i = 0; i < notas.length; i++) {
+    const nota = notas[i];
+    if (nota >= 60) {
+        console.log(`Nota ${nota}: Aprovado`);
+    } else {
+        console.log(`Nota ${nota}: Reprovado`);
+    }
+}
+*/
+
+//6. Escreva uma função podeDirigir(idade) que utiliza uma variável idade já definida. A
+//função deve retornar true se a pessoa tiver 18 anos ou mais e false caso contrário.
+//Teste com duas idades diferentes.
+
+
+// 6. Escreva uma função podeDirigir(idade) que utiliza uma variável idade já definida.
+// A função deve retornar true se a pessoa tiver 18 anos ou mais e false caso contrário.
+
+function podeDirigir(idade: number): boolean {
+    return idade >= 18;
+}
+
+const idade1: number = 16;
+const idade2: number = 21;
+
+console.log(`Idade ${idade1}: Pode dirigir? ${podeDirigir(idade1)}`); // false
+console.log(`Idade ${idade2}: Pode dirigir? ${podeDirigir(idade2)}`); // true
+
+
+
+
+
